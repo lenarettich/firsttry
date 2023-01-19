@@ -1,0 +1,134 @@
+.nav { grid-area: nav; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;   
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color:#DDDDDD;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'nav nav nav'
+    'main right right'
+    'footer footer footer';
+    gap: 10px;
+}
+
+.activePage {
+    font-weight: bold;
+}
+
+#logo {
+    height: 3em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding-left: 1em;
+    padding-right: 1em;
+    float: left;
+    list-style-type: none;
+    word-spacing: inherit;
+}
+
+a {   
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.navigation {
+    padding: 30px;
+}
+
+#portrait {
+    width: 300px;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+#burger {
+    width: 70%;
+    margin-bottom: 1em;
+}
+
+#darstellenplakat {
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 2em;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 2em;
+}
+
+.column {
+    width: 32%;
+    padding-right: 20px;
+    margin-bottom: 1em;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main {
+    margin-top: 5em;
+    margin-bottom: 7em;
+    padding-left: 5em;
+}
+
+.right {
+    margin-top: 5em;
+    margin-bottom: 7em;
+    padding-left: 5em;
+}
+
+.footer {
+    margin-bottom: 7em;
+    padding-left: 5em;
+}
+
+.footer li {
+    width: 200px;
+}
+
+
+p {
+    margin-bottom: 1em;
+    margin-right: 35%;
+}
+
+@media (max-width: 1000px) {
+    #portrait {
+        float: none;
+         width: 200px;
+    }
+}
